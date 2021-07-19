@@ -1,6 +1,6 @@
 .pond{
     box-shadow: border-box;
-    background: #d2691e;
+    background: #ad886e;
 }
 h1{
     text-align: center;
@@ -11,7 +11,7 @@ p{
     font-size: 25px;
 }
 span{
-    color: crimson;
+    color: rgb(88, 70, 74);
 }
 h4{
     font-size: 18px;
