@@ -1,11 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-@import "bootstrap/dist/css/bootstrap.css";
-body
-{
-background-image: url(assets/pexels-alex-azabache-4007310.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-height: 90%;
-width: 90%;
 
+@import "~bootstrap/dist/css/bootstrap.css";
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  line-height: 1.4;
 }
