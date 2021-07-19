@@ -18,4 +18,4 @@ export class StrikethroughDirective {
     this.elem.nativeElement.style.textDecoration=action;
 
   }
-};
+}
