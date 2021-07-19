@@ -4,6 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 # Author
 Cyrus Were
 
+## Description
+- An application that enables users to add quotes,delete quotes.You can also be able to see already existing and there author and can like and unlike quotes.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
