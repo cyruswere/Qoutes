@@ -1,0 +1,31 @@
+<div class="container pond">
+  <h1>Inspirational Quotes.</h1>
+  <hr>
+  <div class="card border-0">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6">
+          <div *ngFor='let quote of quotes;let i = index'>
+            <div>
+              <h4 id={{i}} appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h4>
+              <button (click)='toggleDetails(i)' class="btn btn-success">More Details</button>
+            </div>
+
+            <div *ngIf='quote.showDescription'>
+              <div >
+                <button class="btn btn-primary" (click)='like(i)'>Like {{ quote.like }}</button>
+                <button class="btn btn-secondary" (click)='unlike(i)'>Unlike {{ quote.unlike }}</button>
+              </div>
+              <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+        </div>
+      </div>
+      <p *ngIf='quotes.length > 7'><span id="wan">Warning!</span> You have too many quotes.</p>
+
+    </div>
+  </div>
+</div>
